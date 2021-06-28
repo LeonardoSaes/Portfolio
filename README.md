@@ -5,7 +5,8 @@ Portfólio do desenvolvedor
 O controle das tarefas será feito no GitHub
 
 ## Ícones
+
 :package: nova funcionalidade
 :up: atualização 
-:beatle: correção de bug
+:cricket: correção de bug
 :checkered_flag: release
