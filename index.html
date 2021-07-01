@@ -147,7 +147,7 @@
                     <h2>Site Pet Shop</h2>
                     <h3>HTML</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolore iusto, nemo magnam, dolorum voluptas eum autem unde asperiores, eius beatae! Praesentium doloremque eos est repellat voluptate recusandae non totam.</p>
-                    <button>Saiba mais</button>
+                    <button class="btn">Saiba mais</button>
                 </div>
                 </div>
 
@@ -159,7 +159,7 @@
                         <h2>ToDO list</h2>
                         <h3>HTML,CSS</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolore iusto, nemo magnam, dolorum voluptas eum autem unde asperiores, eius beatae! Praesentium doloremque eos est repellat voluptate recusandae non totam.</p>
-                        <button>Saiba mais</button>
+                        <button class="btn">Saiba mais</button>
                     </div>
                     </div>
 
@@ -171,12 +171,84 @@
                 <h2>Pomodoro App</h2>
                 <h3>JavaScript</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolore iusto, nemo magnam, dolorum voluptas eum autem unde asperiores, eius beatae! Praesentium doloremque eos est repellat voluptate recusandae non totam.</p>
-                <button>Saiba mais</button>
+                <button class="btn">Saiba mais</button>
             </div>
             </div>
         </div>
        </section>
-</body>
+
+       <section>
+           <div class="sessao-contato">
+                <div class="contato-wrapper">
+                    <div class="contato-left">
+
+                    </div>
+                <div class="contato-right">
+                    <h1>Contato</h1>
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="field" id="nome">
+                            <label for="nome" class="field-label">Nome</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="field" id="email">
+                            <label for="email" class="field-label">Email</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea class="field" id="mensagem"></textarea>
+                            <label for="mensagem" class="field-label">Mensagem</label>
+                            
+                        </div>
+                        <button type="submit" class="btn-submit">Enviar</button>
+                    </form>
+                </div>
+                </div>
+           </div>
+       </section>
+
+       <section class="sessao-orcamento">
+           <div class="orcamento-wrapper">
+               <h1>Faça um orçamento</h1>
+               <form>
+                <label for="quantidade">Quantidade de páginas</label>
+                <input type="number" min="1"name="quantidade" id="quantidade">
+                <label for="js">Preciso de um script JS</label>
+                <input type="checkbox" name="js" id="js">
+                <label >Layout</label>
+                <div class="group-layout">
+                    <div>
+                        <input type="radio" name="layout" id="layout-sim">
+                        <label for="layout-sim">Preciso de um layout</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="layout" id="layout-nao">
+                        <label for="layout-nao">Já tenho um layout</label>
+                    </div>
+                </div>
+                <label for="prazo">Prazo</label>
+                 <input type="range" name="prazo" id="prazo">
+                 <button class="btn-orcamento" type="submit">Enviar</button>
+               </form>
+           </div>
+       </section>
+ 
+<script type="text/javascript">
+    (function () {
+        var options = {
+            whatsapp: "+55(11)959862626", // WhatsApp number
+            call_to_action: "Fale Comigo Agora!", // Call to action
+            position: "right", // Position may be 'right' or 'left'
+        };
+        var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+
 <script src="script.js"></script>
+
+</body>
+
 
 </html>
