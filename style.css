@@ -26,12 +26,14 @@
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
+    
 
 
 }
 
 .show-menu .hamburger{
     right: 16rem;
+    
 }
 
 .line{
@@ -84,10 +86,6 @@
 .show-menu .hamburger:hover span{
     opacity: 1;
 }
-
-
-
-
 
 header{
     width: 100%;
@@ -184,6 +182,7 @@ header{
     top: 0;
     right: -20rem;
     transition: all 1s;
+    z-index: 99;
 }
 
 .show-menu .sidebar{
@@ -246,6 +245,7 @@ header{
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(6, 6rem);
     row-gap: .5rem;
+    background-color: #faf6f6;
 }
 
 .conhecimento:nth-child(1){
@@ -318,4 +318,87 @@ header{
 .conhecimentos-img-wrapper img{
     object-fit: cover;
     width: 100%;
+}
+
+.projetos{
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+.card{
+    width: 18rem;
+    height: 25rem;
+    position: relative;
+    
+    
+}
+.card-img-wrapper{
+    width: 100%;
+    height: 100%;
+    border-radius: .7rem;
+    opacity: .9;
+    background-color: #262626;
+
+}
+.card-img-wrapper img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: .7rem;
+    transition: opacity .3s;
+}
+.card:hover .card-img-wrapper img{
+    opacity: .5;
+}
+
+.card-conteudo{
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+    text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, .4);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+}
+
+.card-conteudo h2{
+    font-family: var(--font-primary);
+    font-size: 2rem;
+    font-weight: 500;
+    color: #eee;
+    margin-bottom: 1.5rem;
+}
+
+.card-conteudo h3{
+    font-family: var(--font-action);
+    font-weight: bolder;
+    color: #ff4081;
+    margin-bottom: 1rem;
+}
+.card-conteudo p{
+    font-family:var(--font-secundary);
+    color: #eee;
+    width: 80%;
+    font-weight: 400;
+    margin-bottom: .7rem;
+    
+}
+
+.card-conteudo button{
+    font-family: var(--font-action);
+    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF); 
+    background: linear-gradient(to right, #E100FF, #7F00FF); 
+    text-decoration: none;
+    border: none;
+    width: 8rem;
+    height: 2.5rem;
+    border-radius: .5rem;
+    box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, .6);
+    cursor: pointer;
+    color: #ccc;
+}
+
+.card:hover .card-conteudo{
+    opacity: 1;
+    visibility: visible;
 }
