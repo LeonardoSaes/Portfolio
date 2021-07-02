@@ -185,17 +185,19 @@
                     </div>
                 <div class="contato-right">
                     <h1>Contato</h1>
-                    <form>
+                    <form action="https://api.staticforms.xyz/submit" method="post">
                         <div class="input-group">
-                            <input type="text" class="field" id="nome">
-                            <label for="nome" class="field-label">Nome</label>
+                            <input type="hidden" name="accessKey" value="c986b468-effb-4076-8739-9b569096cdc9">
+                            <input type="hidden" name="redirectTo" value="https://leonardosaes.github.io/Portfolio/">
+                            <input type="text" name="name" class="field" id="nome" required maxlength="50" minlength="3">
+                            <label for="nome" class="field-label" >Nome</label>
                         </div>
                         <div class="input-group">
-                            <input type="text" class="field" id="email">
-                            <label for="email" class="field-label">Email</label>
+                            <input type="text" name="email" class="field" id="email" required maxlength="50">
+                            <label for="email" class="field-label" >Email</label>
                         </div>
                         <div class="input-group">
-                            <textarea class="field" id="mensagem"></textarea>
+                            <textarea class="field" name="message" id="mensagem" required maxlength="150"></textarea>
                             <label for="mensagem" class="field-label">Mensagem</label>
                             
                         </div>
@@ -210,8 +212,8 @@
            <div class="orcamento-wrapper">
                <h1>Faça um orçamento</h1>
                <form>
-                <label for="quantidade">Quantidade de páginas</label>
-                <input type="number" min="1"name="quantidade" id="quantidade">
+                <label for="qtde">Quantidade de páginas</label>
+                <input type="number" min="1"name="qtde" id="qtde">
                 <label for="js">Preciso de um script JS</label>
                 <input type="checkbox" name="js" id="js">
                 <label >Layout</label>
@@ -227,6 +229,7 @@
                 </div>
                 <label for="prazo">Prazo</label>
                  <input type="range" name="prazo" id="prazo">
+                 <label id="preco">R$ 0,00</label>
                  <button class="btn-orcamento" type="submit">Enviar</button>
                </form>
            </div>
@@ -235,7 +238,7 @@
        <footer>
            <div class="footer-content">
                <p>
-                   Copyright &copy; 2021, ETECIA DS - Todos os direitos reservados
+                   Copyright &copy; 2021  - Todos os direitos reservados
                </p>
                <div class="social-list">
                    <ul>
