@@ -10,6 +10,40 @@
     text-decoration: none;
     scroll-behavior: smooth;
 }
+@media only screen and (max-device-width: 1000px) {
+header{
+    font-size:1rem ;
+}
+}
+@media only screen and (max-device-width: 600px) {
+    .container{
+        width: 100%;
+        height: 100%;
+    }  
+}
+@media only screen and (max-device-width: 900px) {
+    .conhecimentos p{
+    width: 100%;
+    display: block;
+    
+
+    }
+}
+@media all and (max-device-width: 1000px) {
+    .contato-right{
+        width: 100%;
+       
+    }
+}
+@media all and (max-device-width: 6px) {
+
+}
+@media all and (min-width:569px) and (max-width:670px){
+    .img-wrapper img{
+        width: 100vh;
+    }
+}
+
 
 :root{
     --font-secundary:"Big Shoulders Display, cursivo";
