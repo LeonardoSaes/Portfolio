@@ -3,6 +3,14 @@ var hamburger = document.querySelector(".hamburger");
 hamburger.addEventListener("click", function(){
     document.querySelector(".container").classList.toggle("show-menu");
 })
+var button = document.querySelector(".banner");
+
+button.addEventListener("click", function(){
+    document.querySelector(".container").classList.toggle("show-menu");
+})
+
+
+
 
 document.querySelector("#qtde").addEventListener("change", atualizarPreco)
 document.querySelector("#js").addEventListener("change", atualizarPreco)
