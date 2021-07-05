@@ -317,6 +317,7 @@ header{
     grid-template-rows: repeat(6, 12vh);
     row-gap: 5px;
     background-color: #faf6f6;
+    
 }
 
 .conhecimento:nth-child(1){
