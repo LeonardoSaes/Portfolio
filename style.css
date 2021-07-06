@@ -628,20 +628,71 @@ footer{
     transition: all .2s;
 
 }
+}
 #link-topo:hover{
      box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, .8) ;
+} 
 }
 
-@media(max-width: 54em){
-    .conhecimentos-img-wrapper {
-        grid-column: 6 / 12;
-        grid-row: 3 / 6;
-    }
+@media (max-width: 768px){
+	.conhecimentos {
+	    display: flex;
+	    flex-direction: column;
+	    flex-wrap: wrap;
+	}
 
-    .conhecimentos{
-        grid-template-columns: repeat(16, 4fr);
-        grid-template-rows: repeat(16, 24vh);
-    }
+	.conhecimento {
+	    padding: 30px;
+	    display: flex;
+	    align-items: center;
+	    flex-direction: column;
+	    align-content: center;
+	    text-align: center;
+	}
 
+	.conhecimento-header {
+	    align-items: center;
+	    margin-bottom: 20px;
+	}
+
+	.conhecimentos-img-wrapper {
+	    display: none;
+	}
+
+	.projetos {
+	    flex-wrap: wrap;
+	}
+
+	.card {
+	    width: calc(100% - 60px);
+	    margin-bottom: 60px;
+	}
+
+	.banner {
+	    position: absolute;
+	    top: 50%;
+	    left: 0px;
+	    padding: 30px;
+	    min-height: 350px;
+	    display: flex;
+	    flex-direction: column;
+	    margin-top: -175px;
+	}
+
+	.contato-wrapper {
+	    width: 100%;
+	    flex-direction: row;
+	    flex-wrap: nowrap;
+	}
+
+	.footer-content {
+	    display: flex;
+	    width: 100%;
+	    justify-content: center;
+	    padding: 30px;
+	    flex-direction: column;
+	    align-content: center;
+	    flex-wrap: wrap;
+	}
 
 }
