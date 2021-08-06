@@ -2,6 +2,8 @@
 
 Portfólio do desenvolvedor
 
+[Clique aqui para visualizar](https://leonardosaes.github.io/Portfolio/)
+
 ## Tarefas
 
 O controle das tarefas será feito no GitHub
